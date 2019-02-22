@@ -1,8 +1,8 @@
 name: qr_scan_custom
 description: 自定义二维码扫描界面
 version: 0.0.1
-author: 图你怀中安稳
-homepage: https://qr_code_custom
+author: kongpingan <billkp@yeah.net>
+homepage: https://jekton.github.io/
 
 environment:
   sdk: ">=2.0.0-dev.68.0 <3.0.0"
