@@ -12,7 +12,25 @@
 发现只是实现了其扫描，对于自定义的二维码界面和扫描框的大小等等是不能自定义的，所以今天封装一个既能实现扫描又能自定义二维码界面的二维码扫描插件
 
 ### qr_scan_custom 自定义界面和其他控制项(闪光灯、相册扫描等)
-![image](https://github.com/kongxiaoan/qr_scan_custom/blob/master/images/QQ20190222.png)
+在开始之前先梳理一下qr_scan_custom 需要做什么
+
+1. 扫码 ---> 我们选择的是zxing
+ ```
+ "cn.yipianfengye.android:zxing-library:2.2"
+ ```
+2. 自定义扫码的界面以及相应的功能
+
+- 需要自定义它的样式（包括大小、颜色、扫码线的样式、四角是否需要角标、（需要时角标的宽度、大小）等等）
+- 需要封装好二维码所需要的基本功能和其他功能
+    
+    基本功能
+    - 扫码（包括条形码）
+    - 闪光灯
+    - 
+3. 将扫描二维码的载体竟可能的封装（是否需要沉浸式、appbar及状态栏的颜色，标题 ，是否需要返回等按钮等等）
+4. 其他，我们需要的时候再添加
+
+
 <img src="https://github.com/kongxiaoan/qr_scan_custom/blob/master/images/QQ20190222.png"  height="600" width="350">
 
 ---
@@ -82,27 +100,6 @@ let channel = FlutterMethodChannel(name: "qr_scan_custom", binaryMessenger: regi
     let instance = SwiftQrScanCustomPlugin()
     registrar.addMethodCallDelegate(instance, channel: channel)
 ``` 
-
-
-### 开始编写插件
-
-在开始之前先梳理一下qr_scan_custom 需要做什么
-
-1. 扫码 ---> 我们选择的是zxing
- ```
- "cn.yipianfengye.android:zxing-library:2.2"
- ```
-2. 自定义扫码的界面以及相应的功能
-
-- 需要自定义它的样式（包括大小、颜色、扫码线的样式、四角是否需要角标、（需要时角标的宽度、大小）等等）
-- 需要封装好二维码所需要的基本功能和其他功能
-    
-    基本功能
-    - 扫码（包括条形码）
-    - 闪光灯
-    - 
-3. 将扫描二维码的载体竟可能的封装（是否需要沉浸式、appbar及状态栏的颜色，标题 ，是否需要返回等按钮等等）
-4. 其他，我们需要的时候再添加
 
 ### 代码实现
 
