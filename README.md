@@ -13,6 +13,8 @@
 
 ### qr_scan_custom 自定义界面和其他控制项(闪光灯、相册扫描等)
 ![image](https://github.com/kongxiaoan/qr_scan_custom/blob/master/images/QQ20190222.png)
+<img src="https://github.com/kongxiaoan/qr_scan_custom/blob/master/images/QQ20190222.png"  height="330" width="495">
+
 ---
 ### 开发步骤
 一、 开发环境
